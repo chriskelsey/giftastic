@@ -48,7 +48,7 @@ var gifDiv = $('<div>').attr('id','gifs').insertAfter('#buttons');
 $('#buttons').on('click','button', function() {
 	$('#gifs').children('div').remove();
 	$button = $(this).text();
-	var queryUrl = 'http://api.giphy.com/v1/gifs/search?';
+	var queryUrl = 'https://api.giphy.com/v1/gifs/search?';
 	queryUrl += $.param({
 		'api_key': 'zKdBO34ncJrTR15wdUTBAwMWyuAjcXx1',
 		'q': $button,
